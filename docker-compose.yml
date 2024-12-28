@@ -22,7 +22,7 @@ services:
     container_name: ten_agent_playground
     restart: always
     ports:
-      - "3000:3000"
+      - "3006:3000"
     networks:
       - ten_agent_network
     environment:
@@ -33,7 +33,7 @@ services:
     container_name: ten_agent_demo
     restart: always
     ports:
-      - "3002:3000"
+      - "3007:3000"
     networks:
       - ten_agent_network
     environment:
@@ -43,7 +43,7 @@ services:
   #   container_name: ten_graph_designer
   #   restart: always
   #   ports:
-  #     - "3001:3000"
+  #     - "3008:3000"
   #   networks:
   #     - ten_agent_network
   #   environment:
